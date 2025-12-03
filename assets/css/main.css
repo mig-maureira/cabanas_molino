@@ -184,7 +184,6 @@ html {
 /* Ajuste del Hero para páginas internas */
 .hero-internal {
     height: 60vh !important;
-    background-image: url('assets/img/hero_llanquihue.jpeg');
     min-height: 400px;
 }
 
