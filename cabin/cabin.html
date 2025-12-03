@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabaña Monte - Cabañas El Molino</title>
+    <meta name="description" content="Detalle de nuestra Cabaña Monte, ideal para parejas.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <link rel="stylesheet" href="../assets/css/main.css">
+
+    <style>
+        /* Estilos específicos para esta página de detalle */
+
+        /* Galería */
+        .main-gallery-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 1rem;
+            cursor: pointer;
+            transition: var(--transition-smooth);
+        }
+
+        .thumb-img {
+            width: 100%;
+            height: 80px;
+            object-fit: cover;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            opacity: 0.6;
+            transition: all 0.3s ease;
+        }
+
+        .thumb-img:hover,
+        .thumb-img.active {
+            opacity: 1;
+            border: 2px solid var(--primary-color);
+        }
+
+        /* Badge de capacidad (reutilizado de indexo.html) */
+        .capacity-badge {
+            background-color: rgba(18, 128, 47, 0.1);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        /* Lista de amenidades */
+        .amenity-list li {
+            margin-bottom: 0.8rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #6c757d;
+        }
+
+        .amenity-list i {
+            color: var(--primary-color);
+            font-size: 1.2rem;
+        }
+
+        /* Cards de sugerencias */
+        .suggestion-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Cabañas El Molino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cabin/index.html">Cabañas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section hero-internal">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-3 fw-bold mb-3 animate-fade-in">Cabaña Monte</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb justify-content-center animate-fade-in" style="animation-delay: 0.2s;">
+                    <li class="breadcrumb-item"><a href="../index.html" class="text-white">Inicio</a></li>
+                    <li class="breadcrumb-item"><a href="cabin/index.html" class="text-white">Cabañas</a></li>
+                    <li class="breadcrumb-item active text-white-50" aria-current="page">Cabaña Monte</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row g-5">
+
+                <div class="col-12 col-lg-7">
+                    <a href="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=1200"
+                        data-fancybox="gallery" data-caption="Vista exterior Cabaña Monte">
+                        <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800"
+                            class="main-gallery-img shadow-sm mb-3" alt="Cabaña Monte Principal" id="mainImage">
+                    </a>
+
+                    <div class="row g-2">
+                        <div class="col-3">
+                            <a href="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=1200"
+                                data-fancybox="gallery" data-caption="Vista frontal">
+                                <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=200"
+                                    class="thumb-img active" alt="Thumb 1">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://images.unsplash.com/photo-1449156493391-d2cfa28e468b?q=80&w=1200"
+                                data-fancybox="gallery" data-caption="Interior acogedor">
+                                <img src="https://images.unsplash.com/photo-1449156493391-d2cfa28e468b?q=80&w=200"
+                                    class="thumb-img" alt="Thumb 2">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=1200"
+                                data-fancybox="gallery" data-caption="Vista desde la terraza">
+                                <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=200"
+                                    class="thumb-img" alt="Thumb 3">
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <a href="https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=1200"
+                                data-fancybox="gallery" data-caption="Dormitorio Principal">
+                                <img src="https://images.unsplash.com/photo-1542718610-a1d656d1884c?q=80&w=200"
+                                    class="thumb-img" alt="Thumb 4">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-5">
+                    <h2 class="display-6 fw-bold mb-3 text-dark">Cabaña Monte</h2>
+
+                    <div class="mb-4">
+                        <span class="capacity-badge">
+                            <i class="bi bi-people-fill"></i> Máximo 2 Personas
+                        </span>
+                    </div>
+
+                    <p class="lead text-muted mb-4">
+                        Íntima y acogedora, ideal para una escapada romántica frente a la chimenea con vista directa al
+                        Volcán Osorno.
+                    </p>
+
+                    <p class="mb-4">
+                        Diseñada pensando en la privacidad y el confort, la Cabaña Monte cuenta con ventanales de piso a
+                        techo que inundan el espacio de luz natural. Disfruta de un desayuno en la terraza privada o
+                        relájate en la tinaja caliente al atardecer.
+                    </p>
+
+                    <h5 class="fw-bold mb-3">¿Qué incluye?</h5>
+                    <ul class="list-unstyled amenity-list mb-5">
+                        <li><i class="bi bi-fire"></i> Chimenea a leña (leña incluida)</li>
+                        <li><i class="bi bi-cup-hot"></i> Cocina Full Equipada</li>
+                        <li><i class="bi bi-car-front"></i> Estacionamiento Privado</li>
+                    </ul>
+
+                    <div class="d-grid gap-2">
+                        <a href="https://wa.me/56912345678?text=Hola,%20me%20interesa%20reservar%20la%20Cabaña%20Monte"
+                            class="btn btn-primary btn-lg py-3">
+                            <i class="bi bi-whatsapp me-2"></i> Reservar por WhatsApp
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h3 class="h2 fw-bold">Otras opciones para ti</h3>
+                <p class="text-muted">Explora más alternativas en El Molino</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm suggestion-card">
+                        <div class="overflow-hidden position-relative">
+
+                            <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800"
+                                class="card-img-top w-100" alt="Cabaña Pino">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cabaña Pino</h5>
+                            <p class="capacity-badge mb-0">
+                                <i class="bi bi-people-fill"></i> Máximo 2 Personas
+                            </p>
+                            <p class="card-text text-muted small">Rodeada de árboles nativos, perfecta para familias
+                                pequeñas.</p>
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary btn-sm stretched-link">Ver
+                                detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm suggestion-card">
+                        <div class="overflow-hidden position-relative">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800"
+                                class="card-img-top w-100" alt="Cabaña El Muelle">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cabaña El Muelle</h5>
+                            <p class="capacity-badge mb-0">
+                                <i class="bi bi-people-fill"></i> Máximo 6 Personas
+                            </p>
+                            <p class="card-text text-muted small">Nuestra opción más espaciosa con terraza panorámica.
+                            </p>
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary btn-sm stretched-link">Ver
+                                detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <div class="card h-100 border-0 shadow-sm suggestion-card">
+                        <div class="overflow-hidden position-relative">
+                            <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800"
+                                class="card-img-top w-100" alt="Cabaña Arce">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Cabaña Arce</h5>
+                            <p class="capacity-badge mb-0">
+                                <i class="bi bi-people-fill"></i> Máximo 5 Personas
+                            </p>
+                            <p class="card-text text-muted small">Rústica y cálida, ideal para lectura y tranquilidad.
+                            </p>
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary btn-sm stretched-link">Ver
+                                detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h2 class="display-5 fw-bold mb-4">Ubicación Privilegiada</h2>
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="location-icon-wrapper bg-primary bg-opacity-10">
+                            <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-semibold mb-2">Región de Los Lagos</h3>
+                            <p class="text-muted mb-0">
+                                Orillas del majestuoso Lago Llanquihue. Un paraíso natural a minutos de Puerto Varas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="map-container" style="height: 300px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194470.39475582832!2d-72.98668!3d-41.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9616335d5c7bb611%3A0x3da7235e52d9e673!2sLago%20Llanquihue!5e0!3m2!1sen!2scl!4v1234567890"
+                            width="100%" height="100%" style="border: 0;" allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-cafe text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <h3 class="h3 fw-bold mb-3">Cabañas El Molino</h3>
+                    <p class="text-white-50">
+                        Tu refugio perfecto en el Lago Llanquihue, Región de Los Lagos, Chile.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="h5 fw-semibold mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="cabin/index.html"
+                                class="text-white-50 text-decoration-none">Cabañas</a></li>
+                        <li class="mb-2"><a href="#contacto" class="text-white-50 text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h4 class="h5 fw-semibold mb-3">Horario</h4>
+                    <p class="text-white-50 mb-0">Lunes - Domingo<br>9:00 AM - 8:00 PM</p>
+                </div>
+            </div>
+            <div class="border-top border-secondary pt-4 text-center">
+                <p class="text-white-50 mb-0">&copy; <span id="year"></span> Cabañas El Molino. Todos los derechos
+                    reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        // Actualizar año footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Inicializar Fancybox (Galería)
+        Fancybox.bind("[data-fancybox]", {
+            // Opciones de personalización si las necesitas
+        });
+
+        // Script simple con jQuery para cambiar la imagen "principal" al hacer hover o click en los thumbnails
+        $(document).ready(function () {
+            $('.thumb-img').on('click', function (e) {
+                e.preventDefault(); // Prevenir comportamiento del link del thumb si se quiere solo cambiar visualización
+
+                // Remover clase activa de todos
+                $('.thumb-img').removeClass('active');
+                // Agregar clase activa al clickeado
+                $(this).addClass('active');
+
+                // Opcional: Si quisieras cambiar la imagen grande visualmente fuera del Fancybox, 
+                // podrías descomentar esto, pero Fancybox ya maneja la galería completa al hacer clic.
+                /*
+                let newSrc = $(this).attr('src').replace('&w=200', '&w=800');
+                $('#mainImage').attr('src', newSrc);
+                */
+            });
+        });
+    </script>
+
+</body>
+
+</html>
