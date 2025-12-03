@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Cabañas El Molino</title>
+    <meta name="description"
+        content="Conoce la historia y servicios de Cabañas El Molino. Alojamiento familiar, para instituciones y pet friendly en el Lago Llanquihue.">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <style>
+        /* Estilos específicos para esta página para mantener consistencia sin tocar el main.css */
+
+        /* Navbar para navegar entre páginas */
+        .navbar-custom {
+            background-color: var(--primary-color);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Ajuste del Hero para páginas internas (más corto que el index) */
+        .hero-internal {
+            height: 60vh !important;
+            /* Sobrescribe el 100vh del main.css solo aquí */
+            min-height: 400px;
+        }
+
+        /* Ajuste para imagen de historia */
+        .history-img {
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            min-height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Cabañas El Molino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacto">Cabañas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero-section hero-internal" style=" background-image: url('assets/img/hero_llanquihue.jpeg')">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-3 fw-bold mb-4 animate-fade-in">Nuestra Esencia</h1>
+            <p class="fs-3 mb-4 animate-fade-in" style="animation-delay: 0.2s;">Tradición y calidez en el sur de Chile
+            </p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 order-2 order-lg-1 animate-fade-in">
+                    <h2 class="display-5 fw-bold mb-4" style="color: var(--primary-color);">Nuestra Historia</h2>
+                    <p class="fs-5 text-muted mb-4">
+                        Cabañas El Molino nació del sueño de compartir la belleza inigualable del Lago Llanquihue con
+                        visitantes de todo el mundo.
+                    </p>
+                    <p class="text-muted">
+                        Fundado hace más de una década, nuestro complejo comenzó como un pequeño refugio familiar. Con
+                        el paso de los años, y manteniendo siempre el respeto por el entorno natural y la arquitectura
+                        típica de la zona, hemos crecido para ofrecer una experiencia de confort sin perder nuestra
+                        esencia rústica.
+                    </p>
+                    <p class="text-muted">
+                        Cada cabaña ha sido construida pensando en integrar el bosque nativo con la comodidad moderna,
+                        creando un espacio donde el tiempo parece detenerse frente a la majestuosidad de los volcanes.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=1000"
+                        alt="Historia de las cabañas" class="history-img animate-fade-in">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold mb-3">Servicios Destacados</h2>
+                <p class="fs-5 text-muted mx-auto" style="max-width: 800px;">
+                    Nos adaptamos a tus necesidades para brindarte la mejor experiencia.
+                </p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon mb-4 mx-auto">
+                                <i class="bi bi-calendar-check"></i>
+                            </div>
+                            <h3 class="h4 fw-semibold mb-3">Todo el Año</h3>
+                            <p class="text-muted">Disfruta del verano en el lago o de la lluvia sureña junto a la
+                                chimenea. Estamos abiertos las 4 estaciones.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon mb-4 mx-auto">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <h3 class="h4 fw-semibold mb-3">Instituciones</h3>
+                            <p class="text-muted">Convenios especiales para empresas y delegaciones. Facturación
+                                disponible y capacidad para grupos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon mb-4 mx-auto">
+                                <i class="bi bi-people-fill"></i>
+                            </div>
+                            <h3 class="h4 fw-semibold mb-3">Familias</h3>
+                            <p class="text-muted">Espacios seguros y pensados para el descanso familiar. Áreas verdes
+                                para que los niños jueguen libremente.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="card feature-card h-100 border-0 shadow-sm p-4 text-center">
+                        <div class="card-body">
+                            <div class="feature-icon mb-4 mx-auto">
+                          <i class="fa-solid fa-dog"></i> </div>
+                            <h3 class="h4 fw-semibold mb-3">Pet Friendly</h3>
+                            <p class="text-muted">Sabemos que son parte de la familia. Tus mascotas son bienvenidas en
+                                nuestras instalaciones.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-white">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-12 col-lg-6">
+                    <h2 class="display-4 fw-bold mb-4">Dónde Encontrarnos</h2>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="location-icon-wrapper bg-primary bg-opacity-10">
+                            <i class="bi bi-geo-alt-fill text-primary fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-semibold mb-2">Dirección</h3>
+                            <p class="text-muted mb-0">
+                                Camino a Ensenada Km 15, Ruta 225.<br>
+                                Puerto Varas, Región de Los Lagos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex gap-3 mb-4">
+                        <div class="location-icon-wrapper" style="background-color: rgba(108, 117, 125, 0.1);">
+                            <i class="bi bi-map text-secondary fs-4"></i>
+                        </div>
+                        <div>
+                            <h3 class="h5 fw-semibold mb-2">Entorno</h3>
+                            <p class="text-muted mb-0">
+                                Estratégicamente ubicados entre Puerto Varas y el Volcán Osorno.
+                                Cercano a Saltos del Petrohué y Centro de Ski.
+                            </p>
+                        </div>
+                    </div>
+
+                    <a href="https://goo.gl/maps/tumapademo" target="_blank"
+                        class="btn btn-primary btn-lg px-5 py-3 mt-3">
+                        Cómo Llegar
+                    </a>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="map-container" style="aspect-ratio: 1;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194470.39475582832!2d-72.98668!3d-41.31!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9616335d5c7bb611%3A0x3da7235e52d9e673!2sLago%20Llanquihue!5e0!3m2!1sen!2scl!4v1234567890"
+                            width="100%" height="100%" style="border: 0;" allowfullscreen loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" title="Ubicación Lago Llanquihue">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <h3 class="h3 fw-bold mb-3">Cabañas El Molino</h3>
+                    <p class="text-white-50">
+                        Tu refugio perfecto en el Lago Llanquihue, Región de Los Lagos, Chile.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h4 class="h5 fw-semibold mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="index.html" class="text-white-50 text-decoration-none">Inicio</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="index.html#amenidades" class="text-white-50 text-decoration-none">Amenidades</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="index.html#contacto" class="text-white-50 text-decoration-none">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h4 class="h5 fw-semibold mb-3">Horario de Atención</h4>
+                    <p class="text-white-50 mb-0">
+                        Lunes - Domingo<br>
+                        9:00 AM - 8:00 PM
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 text-center">
+                <p class="text-white-50 mb-0">
+                    © <span id="year"></span> Cabañas El Molino. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- font awesome-->
+    <script src="https://kit.fontawesome.com/3df372bf23.js" crossorigin="anonymous"></script>
+
+    <a href="https://wa.me/56912345678?text=Hola!%20Vi%20su%20web%20y%20quiero%20reservar" class="whatsapp-float"
+        target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <button id="arriba" class="btn btn-primary rounded-circle shadow-lg arriba">
+        ↑
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        // Update year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

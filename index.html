@@ -20,6 +20,21 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Cabañas El Molino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link " href="nosotros.html">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cabin/index.html">Cabañas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Hero Section -->
     <section class="hero-section" id="inicio" style=" background-image: url('assets/img/hero_llanquihue.jpeg');">
         <div class="hero-overlay"></div>
@@ -33,7 +48,9 @@
             <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center animate-fade-in"
                 style="animation-delay: 0.4s;">
                 <a href="#contacto" class="btn btn-primary btn-lg px-5 py-3 fs-5">Reservar Ahora</a>
+                <!-- cambiar a menu de cabañas (donde se muestren todas las cabañas)-->
                 <a href="#amenidades" class="btn btn-outline-light btn-lg px-5 py-3 fs-5 border-2">Conocer Más</a>
+                <!-- cambiar a menu de cabañas (donde se muestren todas las cabañas)-->
             </div>
         </div>
     </section>
@@ -130,11 +147,11 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
+    <!-- Cabin Section -->
     <section class="py-5" style="background-color: #f8f9fa;">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <h2 class="display-4 fw-bold mb-3">Nuestras Cabañas</h2>
+                <a href="cabin/index.html"><h2 class="display-4 fw-bold mb-3">Nuestras Cabañas</h2></a>
                 <p class="fs-5 text-muted mx-auto" style="max-width: 800px;">
                     Espacios diseñados para tu confort y disfrute
                 </p>
@@ -265,7 +282,8 @@
         </div>
     </footer>
 </body>
-
+<!-- font awesome-->
+<script src="https://kit.fontawesome.com/3df372bf23.js" crossorigin="anonymous"></script>
 <!-- Floating WhatsApp Button -->
 <a href="https://wa.me/56912345678?text=Hola!%20Me%20gustar%C3%ADa%20consultar%20sobre%20las%20caba%C3%B1as"
     class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">

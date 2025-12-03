@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestras Cabañas - Cabañas El Molino</title>
+    <meta name="description" content="Elige tu cabaña ideal en el Lago Llanquihue. Opciones para parejas y familias con vistas espectaculares.">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <!-- Reutilizamos tu CSS existente -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    
+    <style>
+        /* Estilos específicos para las cards de cabañas */
+        .cabin-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            border: none;
+        }
+
+        .cabin-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important;
+        }
+
+        .cabin-card img {
+            height: 250px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .cabin-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .capacity-badge {
+            background-color: rgba(122, 32, 35, 0.1); /* Color primario con transparencia */
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar (Copiado del index pero con el link activo actualizado) -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Cabañas El Molino</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../nosotros.html">Nosotros</a></li>
+                    <!-- Link activo aquí -->
+                    <li class="nav-item"><a class="nav-link active" href="#">Cabañas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section Interno -->
+    <section class="hero-section hero-internal">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1 class="display-3 fw-bold mb-3 animate-fade-in">Nuestras Cabañas</h1>
+            <p class="fs-4 animate-fade-in" style="animation-delay: 0.2s;">Elige el espacio perfecto para tu descanso</p>
+        </div>
+    </section>
+
+    <!-- Listado de Cabañas (Grid 3-2) -->
+    <section class="py-5 bg-light">
+        <div class="container py-4">
+            <!-- Fila centrada para lograr el efecto pirámide (3 arriba, 2 abajo centrados) -->
+            <div class="row g-4 justify-content-center">
+
+                <!-- Cabaña 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 cabin-card shadow-sm">
+                        <!-- Imagen placeholder, reemplaza con tus fotos reales -->
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cabaña Volcán">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="card-title h4 fw-bold mb-3">Cabaña Monte</h3>
+                            
+                            <!-- Párrafo 1: Capacidad -->
+                            <div class="mb-3">
+                                <p class="capacity-badge mb-0">
+                                    <i class="bi bi-people-fill"></i> Máximo 2 Personas
+                                </p>
+                            </div>
+
+                            <!-- Párrafo 2: Invitación -->
+                            <p class="card-text text-muted mb-4">
+                                Íntima y acogedora, ideal para una escapada romántica frente a la chimenea con vista directa al Osorno.
+                            </p>
+
+                            <!-- Link "stretched" hace clicable toda la card -->
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary mt-auto stretched-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cabaña 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 cabin-card shadow-sm">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cabaña Bosque">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="card-title h4 fw-bold mb-3">Cabaña Pino</h3>
+                            
+                            <div class="mb-3">
+                                <p class="capacity-badge mb-0">
+                                    <i class="bi bi-people-fill"></i> Máximo 4 Personas
+                                </p>
+                            </div>
+
+                            <p class="card-text text-muted mb-4">
+                                Rodeada de árboles nativos, perfecta para familias pequeñas que buscan conexión total con la naturaleza.
+                            </p>
+
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary mt-auto stretched-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cabaña 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 cabin-card shadow-sm">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cabaña Lago">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="card-title h4 fw-bold mb-3">Cabaña El Muelle</h3>
+                            
+                            <div class="mb-3">
+                                <p class="capacity-badge mb-0">
+                                    <i class="bi bi-people-fill"></i> Máximo 6 Personas
+                                </p>
+                            </div>
+
+                            <p class="card-text text-muted mb-4">
+                                Nuestra opción más espaciosa, ideal para grupos de amigos que quieran disfrutar de la terraza panorámica.
+                            </p>
+
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary mt-auto stretched-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cabaña 4 (Centrada en la segunda fila visualmente gracias a justify-content-center) -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 cabin-card shadow-sm">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1510798831971-661eb04b3739?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cabaña Montaña">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="card-title h4 fw-bold mb-3">Cabaña Arce</h3>
+                            
+                            <div class="mb-3">
+                                <p class="capacity-badge mb-0">
+                                    <i class="bi bi-people-fill"></i> Máximo 5 Personas
+                                </p>
+                            </div>
+
+                            <p class="card-text text-muted mb-4">
+                                Rústica y cálida, acogedora para disfrutar de tardes de lectura y tranquilidad absoluta.
+                            </p>
+
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary mt-auto stretched-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cabaña 5 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 cabin-card shadow-sm">
+                        <div class="overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1587061949409-02df41d5e562?q=80&w=800&auto=format&fit=crop" class="card-img-top" alt="Cabaña Río">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h3 class="card-title h4 fw-bold mb-3">Cabaña Maitén</h3>
+                            
+                            <div class="mb-3">
+                                <p class="capacity-badge mb-0">
+                                    <i class="bi bi-people-fill"></i> Máximo 3 Personas
+                                </p>
+                            </div>
+
+                            <p class="card-text text-muted mb-4">
+                                Con el sonido relajante del agua cerca, ideal para desconectarse del estrés de la ciudad.
+                            </p>
+
+                            <a href="detalle-cabana.html" class="btn btn-outline-primary mt-auto stretched-link">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (Idéntico al index) -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-12 col-md-4">
+                    <h3 class="h3 fw-bold mb-3">Cabañas El Molino</h3>
+                    <p class="text-white-50">
+                        Tu refugio perfecto en el Lago Llanquihue, Región de Los Lagos, Chile.
+                    </p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h4 class="h5 fw-semibold mb-3">Enlaces</h4>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none">Inicio</a></li>
+                        <li class="mb-2"><a href="nosotros.html" class="text-white-50 text-decoration-none">Nosotros</a></li>
+                        <li class="mb-2"><a href="cabanas.html" class="text-white-50 text-decoration-none">Cabañas</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h4 class="h5 fw-semibold mb-3">Horario de Atención</h4>
+                    <p class="text-white-50 mb-0">
+                        Lunes - Domingo<br>
+                        9:00 AM - 8:00 PM
+                    </p>
+                </div>
+            </div>
+
+            <div class="border-top border-secondary pt-4 text-center">
+                <p class="text-white-50 mb-0">
+                    &copy; <span id="year"></span> Cabañas El Molino. Todos los derechos reservados.
+                </p>
+            </div>
+        </div>
+    </footer>
+<!-- font awesome-->
+<script src="https://kit.fontawesome.com/3df372bf23.js" crossorigin="anonymous"></script>
+    <!-- Botón Whatsapp -->
+    <a href="https://wa.me/56912345678" class="whatsapp-float" target="_blank">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
